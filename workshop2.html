@@ -52,10 +52,18 @@
 
 		//ex 3 
 		if (navigator.userAgent.indexOf("Firefox")<0){
-			alert("Ei ole Firefox!")
+			alert("Ei ole Firefox!");
 			navigator.href="http://www.mtvuutiset.fi";
 		} else {
+			alert("On firefox");
 			navigator.href="http://www.nordnet.fi";
+		}
+
+		//ex4
+		if (confirm('where to go')== true) {
+			alert("You pressed ok");
+		} else {
+			alert("Canceloit");
 		}
 		  
 		</script>

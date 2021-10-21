@@ -5,7 +5,49 @@
         <title>Workshop 3</title>
         <link rel="stylesheet" href="css/styles.css">
         <script>
-            <!-- JavaScript goes here -->
+           function clicked() {
+               alert("You clicked me!"+ new Date());
+           }
+           function showTablePalkat() {
+            var taulukko = `
+            <table id="example" class="display">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>$320,800</td>
+                </tr>
+                <tr>
+                    <td>Garrett Winters</td>
+                    <td>Accountant</td>
+                    <td>$170,750</td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>$86,000</td>
+                </tr>
+                <tr>
+                    <td>Cedric Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>$433,060</td>
+                </tr>
+                <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>$162,700</td>
+                </tr>              
+            </tbody>
+        </table>`;
+        document.write(taulukko);
+           }
         </script>
     </head>
     <body class="ws3">
@@ -16,8 +58,8 @@
         <h2>Exercise 1</h2>
         <p>Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
         <p>
-          <button>Click me</button>
-          <button>Show table</button>
+          <button onclick = clicked()>Click me</button>
+          <button onclick = showTablePalkat()>Show table</button>
           <button>Geolocation</button>
         </p>
 
