@@ -51,10 +51,11 @@
 		repeatingText();
 
 		//ex 3 
-		if (navigator.appName="Mozilla"){
-			navigator.href="http://www.jokerit.com";
+		if (navigator.userAgent.indexOf("Firefox")<0){
+			alert("Ei ole Firefox!")
+			navigator.href="http://www.mtvuutiset.fi";
 		} else {
-			navigator.href="http://www.nordnet.fi"
+			navigator.href="http://www.nordnet.fi";
 		}
 		  
 		</script>
